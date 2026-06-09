@@ -15,6 +15,15 @@ If a Trellis command is available on your platform (e.g. `/trellis:finish-work`,
 If you're using Codex or another agent-capable tool, additional project-scoped helpers may live in:
 - `.agents/skills/` — reusable Trellis skills
 - `.codex/agents/` — optional custom subagents
+If you're using OMP (Oh My Pi), additional project-scoped helpers live in:
+- `.omp/agents/` — Trellis custom subagents (trellis-check, trellis-implement, trellis-research)
+- `.omp/skills/` — Trellis skills
+- `.omp/extensions/trellis/` — Trellis extension (context injection, workflow state)
+
+OMP provides a built-in `task` tool that discovers all agents (OMP bundled + project custom). Use it to dispatch subagents:
+```
+task(agent: "trellis-implement", tasks: [{ id: "...", description: "...", assignment: "..." }])
+```
 
 ## Subagents
 

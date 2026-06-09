@@ -1,0 +1,5 @@
+# OMP-native project settings for Trellis
+enableSkillCommands: true
+
+extensions:
+  - ./extensions/trellis/index.ts
