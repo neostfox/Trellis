@@ -16,7 +16,7 @@ Guide AI through collaborative requirements discovery **before implementation**,
 
 ## When to Use
 
-Triggered from /trellis-start when the user describes a development task, especially when:
+Triggered from `start` (Trellis command) when the user describes a development task, especially when:
 
 * requirements are unclear or evolving
 * there are multiple valid implementation paths
@@ -147,6 +147,15 @@ Write findings into PRD:
 | **Complex**  | Vague goal, architectural choices, multiple approaches | Full brainstorm                             |
 
 > Note: Task already exists from Step 0. Classification only affects depth of brainstorming.
+
+### Thinking Skills (for Complex tasks)
+
+When complexity is Complex, consider loading a thinking skill to structure the analysis:
+
+| Situation | Skill |
+|-----------|-------|
+| Need to decompose to irreducible truths, challenge "best practices" | `first-principles-thinking` |
+| Multiple competing explanations, uncertain root cause | `bayesian-thinking` |
 
 ---
 
@@ -298,6 +307,7 @@ After you can summarize the goal, proactively broaden thinking before converging
 
    * What adjacent commands/flows should remain consistent with this?
    * Are there parity expectations (create vs update, import vs export, etc.)?
+   * When competing hypotheses exist, consider `bayesian-thinking` to quantify evidence weights
 
 3. **Failure & edge cases**
 
@@ -533,6 +543,6 @@ The task directory and PRD already exist from brainstorm, so Phase 1 of the Task
 
 | Command | When to Use |
 |---------|-------------|
-| `/trellis-start` | Entry point that triggers brainstorm |
-| `/trellis-finish-work` | After implementation is complete |
-| `/trellis-update-spec` | If new patterns emerge during work |
+| ``start` (Trellis command)` | Entry point that triggers brainstorm |
+| ``finish-work` (Trellis command)` | After implementation is complete |
+| ``update-spec` (Trellis command)` | If new patterns emerge during work |

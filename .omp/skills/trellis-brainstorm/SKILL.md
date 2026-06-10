@@ -148,6 +148,15 @@ Write findings into PRD:
 
 > Note: Task already exists from Step 0. Classification only affects depth of brainstorming.
 
+### Thinking Skills (for Complex tasks)
+
+When complexity is Complex, consider loading a thinking skill to structure the analysis:
+
+| Situation | Skill |
+|-----------|-------|
+| Need to decompose to irreducible truths, challenge "best practices" | `first-principles-thinking` |
+| Multiple competing explanations, uncertain root cause | `bayesian-thinking` |
+
 ---
 
 ## Step 3: Question Gate (Ask ONLY high-value questions)
@@ -298,6 +307,7 @@ After you can summarize the goal, proactively broaden thinking before converging
 
    * What adjacent commands/flows should remain consistent with this?
    * Are there parity expectations (create vs update, import vs export, etc.)?
+   * When competing hypotheses exist, consider `bayesian-thinking` to quantify evidence weights
 
 3. **Failure & edge cases**
 
