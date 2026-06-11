@@ -68,7 +68,7 @@ async function copyDirFiltered(
  * - agents/, settings.json from platform-specific templates
  * - hooks/ from shared-hooks/ (unified with other platforms)
  * - commands/trellis/ — start + finish-work as slash commands
- * - skills/trellis-{name}/SKILL.md — other 5 as auto-triggered skills
+ * - skills/trellis-{name}/SKILL.md — auto-triggered skills from `common/skills/`
  */
 export async function configureClaude(cwd: string): Promise<void> {
   const sourcePath = getClaudeTemplatePath();
